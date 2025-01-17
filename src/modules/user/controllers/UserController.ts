@@ -10,7 +10,7 @@ export default class UserController {
     this._userService = new UserService();
   }
 
-  async createUser(req: Request, res: Response, next: NextFunction): Promise<void | NextFunction> {
+  async createUser(req: Request, res: Response, next: NextFunction): Promise<void> {
     const { name, email, password }: User = req.body;
     
     // Create the user through the UserService

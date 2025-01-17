@@ -6,7 +6,7 @@ export default class UserService {
 
     private _userRepository:UserRepository
     constructor() {
-        this. _userRepository =  new UserRepository();
+        this._userRepository =  new UserRepository();
     }
 
     async findByEmail(email: string): Promise<User | null> {

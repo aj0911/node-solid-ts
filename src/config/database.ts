@@ -1,7 +1,7 @@
 import mongoose, { Mongoose } from "mongoose";
-import Database from "../shared/interfaces/IDatabse";
+import IDatabase from "../shared/interfaces/IDatabse";
 
-export default class MongoDBDatabase implements Database {
+export default class MongoDBDatabase implements IDatabase {
 
   async connect(): Promise<void> {
     try {

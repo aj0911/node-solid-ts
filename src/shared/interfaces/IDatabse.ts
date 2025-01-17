@@ -1,4 +1,4 @@
 
-export default interface Database {
-    connect(): void;
+export default interface IDatabase {
+    connect(): Promise<void>;
 }
