@@ -17,7 +17,7 @@ export default class MongoDBDatabase implements Database {
         const data: Mongoose = await mongoose.connect(
           process.env.MONGO_URI || "",
           {
-            dbName:process.env.DB_Name || 'TestMongoDBApp'
+            dbName:process.env.DB_NAME || 'TestMongoDBApp'
           }
         );
         console.log(
